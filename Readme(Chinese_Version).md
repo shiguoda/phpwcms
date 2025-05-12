@@ -271,3 +271,55 @@ xdebug.client_port=9003
    - 确保访问的 URL 路径正确。
 
 <!-- by 李双林 -->
+
+
+
+# 5. Contributor Covenant Code of Conduct——参与者守则行为准则
+
+## 5.1 Our Pledge —— 我们的承诺
+
+~~~txt
+In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
+~~~
+
+为了营造一个开放和友好的环境，作为贡献者和维护者，我们承诺让参与我们的项目和社区的每个人都能获得一个没有骚扰的体验，无论年龄、体型、残疾、种族、性别认同和表达、经验水平、国籍、个人外貌、种族、宗教或性认同和取向。
+
+<hr>
+
+## 5.2 Our Standards —— 我们的标准
+
+~~~txt
+Examples of behavior that contributes to creating a positive environment include:
+
+Using welcoming and inclusive language
+Being respectful of differing viewpoints and experiences
+Gracefully accepting constructive criticism
+Focusing on what is best for the community
+Showing empathy towards other community members
+Examples of unacceptable behavior by participants include:
+
+The use of sexualized language or imagery and unwelcome sexual attention or advances
+Trolling, insulting/derogatory comments, and personal or political attacks
+Public or private harassment
+Publishing others' private information, such as a physical or electronic address, without explicit permission
+Other conduct which could reasonably be considered inappropriate in a professional setting
+~~~
+
+有助于创造积极环境的行为包括：
+
+使用欢迎和包容的语言
+尊重不同的观点和经验
+优雅地接受建设性的批评
+专注于什么是对社区最好的
+对其他社区成员表示同情
+参与者不可接受的行为包括：
+
+使用带有性色彩的语言或意象，以及不受欢迎的性关注或性挑逗
+挑衅，侮辱/贬损的评论，以及个人或政治攻击
+公开或私下骚扰
+未经明确许可，发布他人的私人信息，如物理或电子地址
+其他在专业环境中被合理认为不适当的行为
+
+<hr>
+
+<!-- by 陆文财 -->
