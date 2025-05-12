@@ -323,3 +323,41 @@ Other conduct which could reasonably be considered inappropriate in a profession
 <hr>
 
 <!-- by 陆文财 -->
+
+## 5.3 Our Responsibilities —— 我们的责任
+
+~~~txt
+Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
+
+Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
+~~~
+
+项目维护者有责任澄清可接受行为的标准，并期望对任何不可接受的行为采取适当和公平的纠正措施。
+
+项目维护者有权利和责任删除、编辑或拒绝与本行为准则不一致的评论、提交、代码、维基编辑、问题和其他贡献，或者暂时或永久禁止他们认为不适当、威胁、冒犯或有害的其他行为的任何贡献者。
+
+## 5.4 Scope —— 范围
+
+~~~txt
+This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.
+~~~
+
+本行为准则既适用于项目空间，也适用于个人代表项目或社区的公共空间。代表项目或社区的例子包括使用官方项目电子邮件地址，通过官方社交媒体帐户发帖，或在在线或离线活动中担任指定代表。项目维护者可以进一步定义和澄清项目的表示。
+
+
+
+## 5.5 Enforcement —— 执行
+
+~~~txt
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at slackero+github@gmail.com. The project team will review and investigate all complaints, and will respond in a way that it deems appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
+
+Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
+~~~
+
+辱骂、骚扰或其他不可接受的行为可以通过联系项目团队在slackero+github@gmail.com报告。项目团队将审查和调查所有投诉，并将以其认为适当的方式对情况作出回应。项目团队有义务对事件的报告人保密。具体执行政策的进一步细节可另行公布。
+
+项目维护者如果不真诚地遵循或执行行为准则，可能会面临由项目领导的其他成员决定的暂时或永久的后果。
+
+
+
+<!-- by 杨昌福 -->
