@@ -172,3 +172,49 @@ php bin\composer --version
 
 <!-- by 叶倬禛 -->
 
+## 2.2 配置数据库
+
+进入到xampp->phpmyadmin->config.inc.php中，配置你的数据库信息
+
+![1747056244714](E:\phpwcms\phpwcms-master\phpwcms-master\asset\1747056244714.png)
+
+配置完成之后点击XAMPP中的admin
+
+![1747057874446](E:\phpwcms\phpwcms-master\phpwcms-master\asset\1747057874446.png)
+
+就能进入到登录页面，输入账号密码就可以进来了
+
+![1747056310989](E:\phpwcms\phpwcms-master\phpwcms-master\asset\1747056310989.png)
+
+这样就入到数据库里了~~~
+
+- 检查MySql配置文件
+
+进入到XAMPP->mysql->bin->my.ini中检查以下配置
+
+~~~ini
+[mysqld]
+bind-address = 127.0.0.1
+~~~
+
+
+
+## 2.3 在vscode中打开项目
+
+推荐安装以下 VSCode 扩展：
+
+- **PHP Intelephense**：提供代码提示和智能感知。
+- **PHP Debug**：用于调试 PHP 代码。
+- **Live Server**：用于实时预览网页。
+
+## 2.4  **运行项目**
+
+1. **通过 XAMPP 访问项目**： 打开浏览器，访问 `http://localhost/phpwcms`。
+   - 如果一切配置正确，你应该能看到 phpwcms 的安装向导页面。
+   - 按照安装向导的提示完成安装，包括数据库配置、管理员账户创建等。
+2. **使用 VSCode 的 Live Server**：
+   - 在 VSCode 中，右键点击项目中的 `index.php` 文件，选择“Open with Live Server”。
+   - Live Server 会自动启动一个本地服务器，并在浏览器中打开项目。
+
+<!-- by 王梓宇 -->
+
