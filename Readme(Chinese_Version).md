@@ -45,3 +45,130 @@ phpwcms是一个灵活、快速、强大且对客户和开发者友好的基于W
 - **自由软件**：您可以自由分发和/或修改此软件，但不提供任何形式的保证，包括适销性或特定用途的适用性保证。详情请参阅GNU通用公共许可证。
 
 <!-- by 施国达 -->
+
+# 2. 项目部署
+
+要运行 **phpwcms** 项目我当然离不开配置环境啦！接下来就详细地讲解一下该如何配置环境吧！
+
+**因为WebStorm是我们常用的前端软件，所以我们以WebStorm为基础去配置环境**
+
+## ~~2.1 安装本地开发环境~~
+
+### ~~2.1.1安装Web服务器~~
+
+WebStorm 是一个强大的 PHP 开发工具，但它本身不包含 **Web 服务器**或数据库，因此我们需要配置本地开发环境来运行项目。
+
+- 首先我们可以进入到这个网页：[XAMPP Installers and Downloads for Apache Friends](https://www.apachefriends.org/zh_cn/index.html)
+
+去下载XAMPP，它包含了Apache、 Mysql、 PHP是一个非常值得推荐的开发环境
+
+我们下载的**版本是8.2.12**版本（推荐8.2版本以上的）
+
+- 下载安装web Storm
+
+- 下载mysql（XAMPP自带mysql）
+
+![](./asset/XAMPP界面.png)
+
+## ~~2.2 配置Web Storm~~
+
+欸？这里发现了一个问题！我们的webstorm不支持下载
+
+![](./asset/webstorm报错.png)
+
+~~好的那么一切重来哈哈哈哈哈哈哈哈哈哈~~
+
+##  2.1 安装本地开发环境
+
+现在是基于vscode版本
+
+- 配置PHP(环境变量)
+
+![](./asset/xampp环境变量配置.png)
+
+~~~bash
+php -v
+
+PHP 8.2.12 (cli) (built: Oct 24 2023 21:15:15) (ZTS Visual C++ 2019 x64)
+Copyright (c) The PHP Group
+Zend Engine v4.2.12, Copyright (c) Zend Technologies
+~~~
+
+**此时命令行已经显示出版本号说明PHP环境ok**
+
+- 配置mysql（网上自己下载去~）
+
+~~~bash
+(base) PS E:\phpwcms\phpwcms-master\phpwcms-master> MySQL -u root -p
+Enter password: ******
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 8.0.19 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+~~~
+
+**说明mysql环境也没有问题可以正常登录**
+
+- **安装 Composer**：
+
+~~~bash
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+~~~
+
+输入以下命令（自己操作时注意路径，把文件放入到全局环境中）
+
+~~~bash
+mv composer.phar E:\phpwcms\xampp\php\composer
+~~~
+
+运行依赖
+
+~~~bash
+composer install
+~~~
+
+如果不行的话就是Composer安装有问题（一般都是因为**网络太差了**才这样，可以多试几次）
+
+也可以重新安装
+
+~~~bash
+两张链接
+首选
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+备选
+php -r "copy('https://install.phpcomposer.com/installer', 'composer-setup.php');"
+~~~
+
+下载完可以输入以验证
+
+~~~bash
+php -r "if (hash_file('sha384', 'composer-setup.php') === 'your_correct_hash_value') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+~~~
+
+运行
+
+~~~bash
+php composer-setup.php --install-dir=bin --filename=composer
+~~~
+
+验证安装
+
+~~~bash
+php bin\composer --version
+~~~
+
+**如果还是不行请检查你的项目是否放在xampp->htdocs中**
+
+~~vscode麻烦的地方在于好多地方配置完都需要重新打开~~
+
+<!-- by 叶倬禛 -->
+
