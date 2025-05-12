@@ -176,15 +176,15 @@ php bin\composer --version
 
 进入到xampp->phpmyadmin->config.inc.php中，配置你的数据库信息
 
-![1747056244714](E:\phpwcms\phpwcms-master\phpwcms-master\asset\1747056244714.png)
+![](./asset/1747056244714.png)
 
 配置完成之后点击XAMPP中的admin
 
-![1747057874446](E:\phpwcms\phpwcms-master\phpwcms-master\asset\1747057874446.png)
+![1747057874446](./asset/1747057874446.png)
 
 就能进入到登录页面，输入账号密码就可以进来了
 
-![1747056310989](E:\phpwcms\phpwcms-master\phpwcms-master\asset\1747056310989.png)
+![1747056310989](./asset/1747056310989.png)
 
 这样就入到数据库里了~~~
 
@@ -218,3 +218,56 @@ bind-address = 127.0.0.1
 
 <!-- by 王梓宇 -->
 
+# 3. 调试项目
+
+如果需要**调试PHP代码**，可以配置Xdebug:
+
+- 安装Xdebug
+
+  编辑XAMPP->php->php.ini文件，添加以下配置
+
+~~~ini
+[Xdebug]
+zend_extension="C:\xampp\php\ext\php_xdebug.dll"
+xdebug.mode=debug
+xdebug.start_with_request=yes
+xdebug.client_host=127.0.0.1
+xdebug.client_port=9003
+~~~
+
+（**配置后**一定要记得重启XAMPP的Apache模块）
+
+- **配置VSC偶的的调试环境**
+
+~~~txt
+在 VSCode 中，点击左侧的“运行和调试”图标。
+点击“创建 launch.json 文件”，选择“PHP”作为调试环境。
+启动调试，VSCode 会自动连接到 Xdebug。
+~~~
+
+# 4. 总结与补充
+
+1. **数据库连接问题**：
+
+   ​		我们小组在初期连接数据库的时候发现数据库总是连不上，以为是本地的数据库冲突了。其实不是这个原因。
+
+   ​		而是我们没有进入到正确的地方去配置环境
+
+   - **正确的方法：**找到 `config.inc.php`这个文件，进去配置你本地的数据库账号密码。
+
+   - **确保**数据库**已创建**，并且root用户有访问权限		
+
+2. **Apache配置问题**：
+
+   - 一定要确保某盘:/xampp/hodocs/phpwcms文件夹中存在index.php或者其他入口文件。
+   - 检查httpd.conf文件，确保`DocumentRoot` 和 `Directory` 配置正确。
+
+3.  **权限问题**：
+
+   - 确保 XAMPP 的 Apache 服务有权限访问项目文件夹和文件。
+
+4. **URL 路径问题**：
+
+   - 确保访问的 URL 路径正确。
+
+<!-- by 李双林 -->
